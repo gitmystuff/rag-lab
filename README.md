@@ -118,7 +118,38 @@ Once your scenario is defined, plan the actual data your application will use. Y
 
 ## Step 3 — Build the Application
 
-Your team will build a **single `app.py`** file using Streamlit. The application will be structured as five tabs.
+1. Clone the repository
+```bash
+   git clone https://github.com/gitmystuff/rag-lab.git
+   cd rag-lab
+```
+
+2. Install dependencies
+```bash
+   uv sync
+```
+
+3. Configure your environment
+
+   **On Mac/Linux:**
+```bash
+   cp .env.example .env
+```
+   **On Windows:**
+```bash
+   copy .env.example .env
+```
+   Open `.env` and fill in your credentials for all four databases and your Groq API key.
+
+   > **Important:** Never commit `.env` to GitHub. It contains your credentials and is already listed in `.gitignore`.
+
+4. Run the application
+```bash
+   uv run streamlit run app.py
+```
+   > **Note:** The first run will download the `all-MiniLM-L6-v2` embedding model (~90MB). This only happens once.
+
+The application will be structured as five tabs — PostgreSQL, MongoDB, ChromaDB, Neo4j, and Ask Anything.
 
 ### Project Structure
 
