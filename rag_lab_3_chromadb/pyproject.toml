@@ -1,0 +1,39 @@
+[project]
+name = "rag-demo"
+version = "0.1.0"
+description = "RAG demo — LangChain, LangGraph, ChromaDB, Streamlit, Groq"
+requires-python = ">=3.11, <3.13"
+
+dependencies = [
+    # LangChain
+    "langchain>=0.3.0",
+    "langchain-core>=0.3.0",
+    "langchain-community>=0.3.0",
+    "langchain-text-splitters>=0.3.0",
+    "langchain-groq>=0.2.0",
+    "langchain-ollama>=0.2.0",
+
+    # LangGraph
+    "langgraph>=1.0.0",
+
+    # Vector store
+    "chromadb>=0.5.0",
+
+    # Embeddings (local, no API key required)
+    "sentence-transformers>=3.0.0",
+
+    # Document loaders
+    "pypdf>=4.0.0",
+    "unstructured>=0.15.0",
+
+    # UI
+    "streamlit>=1.38.0",
+
+    # Utilities
+    "python-dotenv>=1.0.0",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "ruff>=0.6.0",
+]

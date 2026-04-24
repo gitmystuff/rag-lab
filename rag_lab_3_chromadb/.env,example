@@ -1,0 +1,15 @@
+# ── LLM PROVIDER ─────────────────────────────────────────────────────────────
+# Set to "groq" or "ollama"
+LLM_PROVIDER=groq
+
+# ── GROQ ─────────────────────────────────────────────────────────────────────
+# Get a free API key at https://console.groq.com
+GROQ_API_KEY=your_groq_api_key_here
+GROQ_MODEL=llama-3.1-8b-instant
+
+# ── OLLAMA (local fallback) ───────────────────────────────────────────────────
+# Install from https://ollama.com
+# Pull a model: ollama pull llama3.2
+# Start server: ollama serve
+OLLAMA_BASE_URL=http://localhost:11434
+OLLAMA_MODEL=llama3.2
